@@ -1,5 +1,6 @@
 <script lang="ts">
 	import TaskList from '$lib/components/LeftSection/TaskList.svelte';
+	import ClockContainer from '$lib/components/RightSection/ClockContainer.svelte';
 	import * as Resizable from '$lib/components/ui/resizable/index';
 </script>
 
@@ -17,7 +18,7 @@
 				<Resizable.Handle class="bg-gray-900" />
 				<Resizable.Pane defaultSize={25} class="bg-gray-900">
 					<div class="clock-background m-4 flex h-full items-center justify-center rounded-2xl">
-						right section
+						<ClockContainer />
 					</div>
 				</Resizable.Pane>
 				<Resizable.Handle class="bg-gray-900" />
@@ -31,3 +32,11 @@
 		</Resizable.Pane>
 	</Resizable.PaneGroup>
 </body>
+
+<style>
+	.clock-background {
+		background-image: url('/assets/clock-background.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>

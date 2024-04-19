@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@neodrag/svelte':
+    specifier: ^2.0.5
+    version: 2.0.5
   bits-ui:
     specifier: ^0.21.4
     version: 0.21.4(svelte@4.2.15)
@@ -449,6 +452,10 @@ packages:
       focus-trap: 7.5.4
       nanoid: 5.0.7
       svelte: 4.2.15
+    dev: false
+
+  /@neodrag/svelte@2.0.5:
+    resolution: {integrity: sha512-Z2ef73AMTiBPzD8zs6IrwlGHS5zmx/nmi5xysoyn5emI1Khqc9WgqPIZMNc6t+tqwD3AtDvy+4raXgFn5HKEkw==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:

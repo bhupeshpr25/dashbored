@@ -1,4 +1,5 @@
 <script lang="ts">
+	import BottomSection from '$lib/components/BottomSection/BottomSection.svelte';
 	import TaskList from '$lib/components/LeftSection/TaskList.svelte';
 	import ClockContainer from '$lib/components/RightSection/ClockContainer.svelte';
 	import * as Resizable from '$lib/components/ui/resizable/index';
@@ -27,7 +28,7 @@
 		<Resizable.Handle class="bg-gray-900" />
 		<Resizable.Pane defaultSize={30} class="bg-gray-900">
 			<div class="bg-morphic m-4 flex h-full items-center justify-center rounded-2xl">
-				bottom section
+				<BottomSection />
 			</div>
 		</Resizable.Pane>
 	</Resizable.PaneGroup>

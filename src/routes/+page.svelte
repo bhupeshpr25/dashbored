@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TaskList from '$lib/components/LeftSection/TaskList.svelte';
 	import * as Resizable from '$lib/components/ui/resizable/index';
 </script>
 
@@ -8,7 +9,9 @@
 	<Resizable.PaneGroup direction="vertical" class="rounded-2xl">
 		<Resizable.Pane defaultSize={70}>
 			<Resizable.PaneGroup direction="horizontal" class="rounded-lg border">
-				<Resizable.Pane defaultSize={25} class="bg-gray-900">left section</Resizable.Pane>
+				<Resizable.Pane defaultSize={25} class="bg-gray-900">
+					<TaskList />
+				</Resizable.Pane>
 				<Resizable.Handle class="bg-gray-900" />
 				<Resizable.Pane defaultSize={50} class="bg-gray-900">middle section</Resizable.Pane>
 				<Resizable.Handle class="bg-gray-900" />

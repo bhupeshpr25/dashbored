@@ -31,10 +31,10 @@
 </script>
 
 <Select.Root portal={null}>
-	<Select.Trigger class={`${width} w-48 border-none bg-gray-900`}>
+	<Select.Trigger class={`${width} border-none bg-gray-900`}>
 		<Select.Value {placeholder} />
 	</Select.Trigger>
-	<Select.Content class="bg-morphic">
+	<Select.Content class="bg-morphic" sameWidth={false}>
 		<Select.Group>
 			<div class="m-4 flex flex-col">
 				{#each models as model, index (model.id)}

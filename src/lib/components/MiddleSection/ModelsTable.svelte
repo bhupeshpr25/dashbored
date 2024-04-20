@@ -5,13 +5,13 @@
 	import { Accordion, AccordionItem } from 'svelte-collapsible';
 </script>
 
-<div class="bg-morphic my-4 flex h-full items-center justify-center rounded-2xl">
-	<div class="bg-morphic m-4 h-full rounded-2xl pl-4">
+<div class="my-4 flex h-full items-center justify-center rounded-2xl bg-morphic">
+	<div class="m-4 h-full rounded-2xl bg-morphic pl-4">
 		<div class="m-4 pt-1 text-2xl font-bold">AI Models</div>
 		<div class="flex items-center space-x-2">
-			<SelectModel width="w-48" placeholder="model" />
-			<SelectModel width="w-48" placeholder="model" />
-			<SelectModel width="w-48" placeholder="model" />
+			<SelectModel width="w-24" placeholder="model" />
+			<SelectModel width="w-24" placeholder="model" />
+			<SelectModel width="w-24" placeholder="model" />
 		</div>
 		<div class="w-full font-semibold">
 			<!-- Table -->
